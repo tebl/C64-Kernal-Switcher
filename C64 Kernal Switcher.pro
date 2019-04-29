@@ -1,4 +1,4 @@
-update=29/04/2019 14:39:15
+update=29/04/2019 15:45:41
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -62,4 +60,6 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=2364
-LibName34=mysensors_symbols/mysensors_arduino
+LibName34=C:/Program Files/KiCad/share/kicad/library/modules
+[general]
+version=1

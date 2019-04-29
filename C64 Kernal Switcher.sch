@@ -32,7 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:2364
-LIBS:mysensors_arduino
+LIBS:modules
 LIBS:C64 Kernal Switcher-cache
 EELAYER 25 0
 EELAYER END
@@ -362,70 +362,50 @@ Entry Wire Line
 Entry Wire Line
 	6175 2100 6275 2200
 $Comp
-L ArduinoProMini IC1
-U 1 1 5CC73261
-P 2700 6175
-F 0 "IC1" H 1950 7425 40  0000 L BNN
-F 1 "ArduinoProMini" H 3100 4775 40  0000 L BNN
-F 2 "mysensors_arduino:pro_mini" H 2700 6175 30  0001 C CIN
-F 3 "" H 2700 6175 60  0000 C CNN
-	1    2700 6175
-	1    0    0    -1  
-$EndComp
-$Comp
 L VCC #PWR08
 U 1 1 5CC73368
-P 1725 5000
-F 0 "#PWR08" H 1725 4850 50  0001 C CNN
-F 1 "VCC" H 1725 5150 50  0000 C CNN
-F 2 "" H 1725 5000 50  0001 C CNN
-F 3 "" H 1725 5000 50  0001 C CNN
-	1    1725 5000
+P 3625 4850
+F 0 "#PWR08" H 3625 4700 50  0001 C CNN
+F 1 "VCC" H 3625 5000 50  0000 C CNN
+F 2 "" H 3625 4850 50  0001 C CNN
+F 3 "" H 3625 4850 50  0001 C CNN
+	1    3625 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR09
 U 1 1 5CC734A8
-P 1725 7450
-F 0 "#PWR09" H 1725 7200 50  0001 C CNN
-F 1 "GND" H 1725 7300 50  0000 C CNN
-F 2 "" H 1725 7450 50  0001 C CNN
-F 3 "" H 1725 7450 50  0001 C CNN
-	1    1725 7450
+P 2850 7075
+F 0 "#PWR09" H 2850 6825 50  0001 C CNN
+F 1 "GND" H 2850 6925 50  0000 C CNN
+F 2 "" H 2850 7075 50  0001 C CNN
+F 3 "" H 2850 7075 50  0001 C CNN
+	1    2850 7075
 	1    0    0    -1  
 $EndComp
-Text GLabel 3775 5475 2    60   Output ~ 0
-LED
-Text GLabel 3775 6275 2    60   Output ~ 0
-LED_ALT
-Text GLabel 3775 5575 2    60   Output ~ 0
+Text GLabel 2175 5725 0    60   Output ~ 0
+LED1
+Text GLabel 2175 5825 0    60   Output ~ 0
 A13
-Text GLabel 3775 5675 2    60   Output ~ 0
+Text GLabel 2175 5925 0    60   Output ~ 0
 A14
-Text GLabel 3775 5775 2    60   BiDi ~ 0
+Text GLabel 2175 6025 0    60   BiDi ~ 0
 RESET
-Text GLabel 3775 5875 2    60   Input ~ 0
+Text GLabel 2175 5625 0    60   Input ~ 0
 ESXROM
-Text GLabel 3775 5975 2    60   Input ~ 0
+Text GLabel 2175 6125 0    60   Input ~ 0
 RESTORE
-NoConn ~ 1800 5375
-NoConn ~ 1800 6875
-NoConn ~ 1800 6975
-NoConn ~ 3700 6075
-NoConn ~ 3700 6375
-NoConn ~ 3700 6475
-NoConn ~ 3700 6675
-NoConn ~ 3700 6775
-NoConn ~ 3700 6875
-NoConn ~ 3700 6975
-NoConn ~ 3700 7075
-NoConn ~ 3700 7175
-NoConn ~ 3700 7275
-NoConn ~ 3700 7375
-NoConn ~ 3700 5075
-NoConn ~ 3700 5175
-NoConn ~ 3700 5275
-NoConn ~ 3700 5375
+NoConn ~ 2850 4925
+NoConn ~ 2250 6425
+NoConn ~ 2250 6325
+NoConn ~ 3250 5925
+NoConn ~ 3250 6025
+NoConn ~ 3250 6125
+NoConn ~ 3250 6225
+NoConn ~ 3250 6325
+NoConn ~ 3250 6425
+NoConn ~ 3250 6525
+NoConn ~ 3250 6625
 $Comp
 L Conn_01x03 J1
 U 1 1 5CC73F38
@@ -438,9 +418,9 @@ F 3 "" H 6675 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5900 4750 0    60   Input ~ 0
-LED
+LED1
 Text GLabel 5900 4950 0    60   Input ~ 0
-LED_ALT
+LED2
 $Comp
 L R R1
 U 1 1 5CC7408D
@@ -588,33 +568,17 @@ Wire Wire Line
 	4350 3675 4350 3575
 Connection ~ 4350 3575
 Wire Wire Line
-	1725 5000 1725 5075
+	2250 5725 2175 5725
 Wire Wire Line
-	1725 5075 1800 5075
+	2250 5825 2175 5825
 Wire Wire Line
-	1725 7175 1725 7450
+	2250 5925 2175 5925
 Wire Wire Line
-	1725 7375 1800 7375
+	2250 6025 2175 6025
 Wire Wire Line
-	1725 7175 1800 7175
-Connection ~ 1725 7375
+	2250 5625 2175 5625
 Wire Wire Line
-	1800 7275 1725 7275
-Connection ~ 1725 7275
-Wire Wire Line
-	3700 5475 3775 5475
-Wire Wire Line
-	3700 5575 3775 5575
-Wire Wire Line
-	3700 5675 3775 5675
-Wire Wire Line
-	3700 5775 3775 5775
-Wire Wire Line
-	3700 5875 3775 5875
-Wire Wire Line
-	3700 5975 3775 5975
-Wire Wire Line
-	3700 6275 3775 6275
+	2250 6125 2175 6125
 Wire Wire Line
 	5900 4750 5975 4750
 Wire Wire Line
@@ -648,11 +612,11 @@ F 3 "" H 6675 5775 50  0001 C CNN
 	1    6675 5775
 	1    0    0    -1  
 $EndComp
-Text GLabel 6400 5675 0    60   BiDi ~ 0
+Text GLabel 6400 5775 0    60   BiDi ~ 0
 RESET
 Wire Wire Line
 	6400 5675 6475 5675
-Text GLabel 6400 5775 0    60   Output ~ 0
+Text GLabel 6400 5675 0    60   Output ~ 0
 ESXROM
 Text GLabel 6400 5875 0    60   Output ~ 0
 RESTORE
@@ -660,4 +624,54 @@ Wire Wire Line
 	6400 5775 6475 5775
 Wire Wire Line
 	6400 5875 6475 5875
+$Comp
+L Arduino_Nano_v3.x A1
+U 1 1 5CC769CE
+P 2750 5925
+F 0 "A1" H 2550 6950 50  0000 R CNN
+F 1 "Arduino_Nano_v3.x" H 2550 6875 50  0000 R CNN
+F 2 "Modules:Arduino_Nano" H 2900 4975 50  0001 L CNN
+F 3 "" H 2750 4925 50  0001 C CNN
+	1    2750 5925
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2650 4925
+NoConn ~ 3250 5725
+NoConn ~ 3250 5325
+NoConn ~ 3250 5425
+NoConn ~ 2250 5325
+NoConn ~ 2250 5425
+NoConn ~ 2250 5525
+Text GLabel 2175 6225 0    60   Output ~ 0
+LED2
+Wire Wire Line
+	2250 6225 2175 6225
+NoConn ~ 2250 6525
+Wire Wire Line
+	2750 6925 2750 7000
+Wire Wire Line
+	2750 7000 2850 7000
+Wire Wire Line
+	2850 6925 2850 7075
+Connection ~ 2850 7000
+NoConn ~ 2250 6625
+$Comp
+L Conn_01x02 J3
+U 1 1 5CC7857E
+P 3625 5125
+F 0 "J3" H 3625 5225 50  0000 C CNN
+F 1 "Power" H 3625 4925 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3625 5125 50  0001 C CNN
+F 3 "" H 3625 5125 50  0001 C CNN
+	1    3625 5125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3625 4850 3625 4925
+Wire Wire Line
+	3525 4925 3525 4850
+Wire Wire Line
+	3525 4850 2950 4850
+Wire Wire Line
+	2950 4850 2950 4925
 $EndSCHEMATC
