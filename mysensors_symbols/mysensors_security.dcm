@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATSHA204A
+D ATSHA204A, Secure Authentication and Validation Device, SOT-23, Vcc=3.3V
+K Atmel CryptoAuthentication
+F http://www.atmel.com/Images/Atmel-8885-CryptoAuth-ATSHA204A-Datasheet.pdf
+$ENDCMP
+#
+#End Doc Library

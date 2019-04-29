@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATSAMD21E
+D Atmel ATSAM D21E
+K Cortex M0 atmel
+$ENDCMP
+#
+$CMP ATSAMD21G
+D Atmel ATSAM D21G
+K Cortex M0 atmel
+$ENDCMP
+#
+$CMP ATSAMD21J
+D Atmel ATSAM D21J
+K Cortex M0 atmel
+$ENDCMP
+#
+#End Doc Library

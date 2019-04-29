@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMS1117
+D 1A LDO Voltage Regulator
+K LDO Regulator
+F http://www.advanced-monolithic.com/pdf/ds1117.pdf
+$ENDCMP
+#
+$CMP TPS61097A
+D TPS61097A Low-Input Voltage Synchronous-Boost Converter With Low Quiescent Current, SOT-23-5
+K Low-Input Voltage Synchronous-Boost Converter With Low Quiescent Current 400mA
+F http://www.ti.com/lit/ds/symlink/tps61097a-33.pdf
+$ENDCMP
+#
+$CMP TPS6122X
+D TPS6122x Low Input Voltage, 0.7V Boost Converter With 5.5μA Quiescent Current, SC-70 (6)
+K TPS6122x Low Input Voltage, 0.7V Boost Converter With 5.5μA Quiescent Current
+F http://www.ti.com/lit/ds/symlink/tps61221.pdf
+$ENDCMP
+#
+#End Doc Library

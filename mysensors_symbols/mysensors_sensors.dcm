@@ -1,0 +1,16 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP APDS9960
+D Gesture Sensor
+$ENDCMP
+#
+$CMP OPT3001
+D Ambient Light Sensor
+$ENDCMP
+#
+$CMP Si7021
+D Humidity / Temperature sensor
+K Si7021
+$ENDCMP
+#
+#End Doc Library

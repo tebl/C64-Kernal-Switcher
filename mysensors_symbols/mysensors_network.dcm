@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESP8266
+D ESP8266 WiFi module
+K Wifi TCP/IP module
+$ENDCMP
+#
+$CMP W5100
+D Wiznet W5100
+K Ethernet TCP/IP module
+$ENDCMP
+#
+#End Doc Library

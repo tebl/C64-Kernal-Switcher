@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ArduinoProMini
+D Arduino Pro Mini China variant, ATMEGA328, 16k Flash, 1kB SRAM, 512B EEPROM
+K Arduino Pro Mini China AVR 8bit Microcontroller MegaAVR
+F http://www.arduino.cc/en/uploads/Main/Arduino-Pro-Mini-schematic.pdf
+$ENDCMP
+#
+#End Doc Library

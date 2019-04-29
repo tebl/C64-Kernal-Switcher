@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 24LC32AT
+D 24LC32AT, 32-Kbit I2C Eeprom, SOIC-8, Vcc=2.5-5V
+K Microchip
+F http://www.mouser.com/ds/2/268/21713d-64051.pdf
+$ENDCMP
+#
+$CMP AT24C32-STUM-T
+D AT24C32-STUM-T, 32-Kbit I2C Eeprom, SOT23-5, Vcc=2.5-5V
+K Atmel
+F http://www.mouser.com/ds/2/36/Atmel-8869-SEEPROM-AT24CS32-Datasheet-469859.pdf
+$ENDCMP
+#
+$CMP AT25DF512C
+D AT25DF512C, 512-Kbit SPI Serial Flash Memory, SOIC-8, Vcc=3.3V
+K Adesto Flash
+F http://www.adestotech.com/wp-content/uploads/DS-AT25DF512C-030.pdf
+$ENDCMP
+#
+#End Doc Library

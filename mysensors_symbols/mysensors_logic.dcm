@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74LVC1G125
+D Single buffer 3 State out
+K TTL buffer 3State
+$ENDCMP
+#
+$CMP MAX3002E
+D MAX3002 8 channel level converter
+K level shifter, 8 channel
+$ENDCMP
+#
+$CMP MAX3373E
+D MAX3373 2 channel level converter
+K level shifter, 2 channel I2C
+$ENDCMP
+#
+$CMP MAX3378E
+D MAX3378 4 channel level converter
+K level shifter, 4 channel I2C
+$ENDCMP
+#
+$CMP SN65HVD485E
+D RS485 bus driver
+$ENDCMP
+#
+#End Doc Library
