@@ -1,4 +1,4 @@
-update=17/06/2019 16:29:28
+update=17/06/2019 21:46:55
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,13 @@ LibName32=valves
 LibName33=2364
 LibName34=C:/Program Files/KiCad/share/kicad/library/modules
 LibName35=C:/Program Files/KiCad/share/kicad/library/microchip_pic12mcu
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=export
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
