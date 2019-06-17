@@ -1,10 +1,13 @@
-// C64MultiKernel.c Rev 1.13.1 (2017-11-02)
-// coded by BWACK in mikroC
+// C64MultiKernel.c Rev 1.14 (2019-06-17)
+// coded by BWACK in mikroC, rewritten by TEBL for single LED.
+
 
 // Multikernel switcher for the C64 breadbin/longboard
 // a 2332 ROM to 27C256 ROM adapter with four kernels
-// The microcontroller program flips through the four kernels at the press of
-// restore key, in other words its a 'switchless' design.
+// The microcontroller program flips through the four kernels by holding down
+// the RESTORE-key, in other words its a 'switchless' design. Red LED will flash
+// according to action, counting the flashes with 1 being reset, 2 is next 
+// kernal and the subsequent will jump to a specific kernal.
 
 // MCU: PIC12F629 or PIC12F675
 // EasyPIC5 development board
@@ -16,6 +19,7 @@
 
 
 // changes:
+//   2019-06-17 Rev 1.14 - Rewritten for single RGB
 //   2017-11-02 Rev 1.13.1 - Added support for PIC12F675
 //   2016-10-22 Rev 1.13 - putting the mcu to sleep
 //   2016-09-17 Rev 1.12 - removed kernal=0. Switch-case state machine.
