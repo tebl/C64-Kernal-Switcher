@@ -684,24 +684,13 @@ Wire Wire Line
 	6300 5550 6425 5550
 Wire Wire Line
 	7350 5550 7350 5625
-$Comp
-L Conn_01x02 J1
-U 1 1 5D07E10A
-P 6675 4175
-F 0 "J1" H 6675 4275 50  0000 C CNN
-F 1 "Signals" H 6675 3975 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 6675 4175 50  0001 C CNN
-F 3 "" H 6675 4175 50  0001 C CNN
-	1    6675 4175
-	1    0    0    -1  
-$EndComp
 Text GLabel 6400 4175 0    60   Output ~ 0
 ~RESTORE
 Wire Wire Line
 	6400 4175 6475 4175
 Wire Wire Line
-	6400 4275 6475 4275
-Text GLabel 6400 4275 0    60   BiDi ~ 0
+	6400 4375 6475 4375
+Text GLabel 6400 4375 0    60   BiDi ~ 0
 ~RESET
 $Comp
 L C C1
@@ -759,4 +748,16 @@ Wire Wire Line
 	4350 3425 4350 3575
 Wire Wire Line
 	4350 3575 4425 3575
+$Comp
+L Conn_01x03 J1
+U 1 1 5D07EA73
+P 6675 4275
+F 0 "J1" H 6675 4475 50  0000 C CNN
+F 1 "Signals" H 6675 4075 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 6675 4275 50  0001 C CNN
+F 3 "" H 6675 4275 50  0001 C CNN
+	1    6675 4275
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6475 4275
 $EndSCHEMATC
