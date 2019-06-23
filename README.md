@@ -1,5 +1,7 @@
 # C64 Kernal Switcher
 
+**Waiting for PCBs - design is untested!**
+
 Originally started this design with the idea of using an Arduino as a way to switch between Commodore 64 kernal ROMs, but quickly ran out of space and turns out BWACK already did a better one - see further below for notes and information for that design. Note that this function is only used with Commodore 64 computers with "longboards".
 
 I've adapted his designs into mine, changing a few of the features to my liking with the intent of reusing the original power LEDs as well as support for manual switches (find it easier that way). Original pinouts and RGB headers have been kept the same in order to not have to do a manual like he did, but note that I've rotated them for easier use with angled pin headers to save on space within the newer C64C-style cases.
@@ -33,7 +35,7 @@ Due to the space constraints, the following sequence of component installation i
 When installing in the computer, the pin on the bottom are inserted into the socket. You'll now need to find suitable places to attach the signal wires to the mainboard, you'll need to find a spot for the RESET and the RESTORE lines. RESET will have continuity to pin 40 on the 6510 processor, a spot for RESTORE can be found by tracing from pin 3 of the keyboard connector (pin 2 is missing). As with all things Commodore, Ray Carlsen will probably have a picture of those points for your specific revision so take a look [http://personalpages.tds.net/~rcarlsen/cbm/switchless%20JiffyDOS/](http://personalpages.tds.net/~rcarlsen/cbm/switchless%20JiffyDOS/).
 
 ## Kernals
-There have been made several kernals for the Commodore 64, this solution allows you to add 3 other kernals in addition to the original one (you'll need it for compatibility). Among my favourites are the SD2IEC kernal, TurboTape ROM and JiffyDOS - most of these you'll find online, usually in the form of an 8kb bin-file. Note that JiffyDOS, while a popular choice, is still under license so you should therefore obtain a registered license for it!
+There have been made several kernals for the Commodore 64, this solution allows you to add 3 other kernals in addition to the original one (you'll need it for compatibility). Among my favourites are the [SD2IEC Kernal ROM](https://csdb.dk/release/?id=159050), [Turbo Tape Kernal ROM](https://csdb.dk/release/?id=47403) and [JiffyDOS](http://www.go4retro.com/products/jiffydos/). Note that JiffyDOS, while a popular choice is still under license so you should therefore seek to obtain a registered license for it!
 
 On windows you can generate a 32kb file with your selected kernals by using the copy command, this can then be flashed to a blank 27C256 EPROM. Substitute kernals 2-4 with those of your choice:
 
@@ -60,11 +62,13 @@ The supplied KiCad files should be sufficient as both a schematic and as a  star
 # BOM
 Most parts should be easy to get a hold of from your favourite local electronic component shop, but given that I don't have access to such shops where I live so everything was based on whatever I could get cheapest from ebay/AliExpress (free shipping, plan on usually waiting 3-4 weeks though). The list below should be everything you'll need in addition to a workable soldering iron and some 60/40 soldering tin. Other tools needed for this project is an EPROM-ereaser as well as an EPROM-programmer for the two ICs (I use MiniPro TL866 for both).
 
+Pin headers you order in bulk and snap off parts as needed, but note that you should get round pin headers for the part that goes into the socket - while you can use the regular kind, you may easily wear out or break the socket.
+
 Components in parenthesis are those used for extra features, you can omit these if you want to or have no need of those features (adding switches makes no sense if using MCU). RGB header can be left off, this is optional if you wish to use code from the original project! Sockets are always recommended though technically not needed.
 
 | Reference    | Item                                  | Count |
 | ------------ | ------------------------------------- | ----- |
-| PCB          | Fabricate using Gerber files ([order](https://www.pcbway.com/project/shareproject/Sega_Master_System_II_Composite_Video_Board.html=88707))  |     1 |
+| PCB          | Fabricate using Gerber files          |     1 |
 | C1           | 100nF capacitor                       |     1 |
 | R1           | 1k ohm resistor                       |   (1) | 
 | R2           | 3k3 ohm resistor                      |   (1) |
