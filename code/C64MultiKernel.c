@@ -76,9 +76,9 @@ void setLED(void) {
 
 void blinkLED(void) {
   RED_LED=~RED_LED;
-  delay_ms(50);
+  delay_ms(100);
   RED_LED=~RED_LED;
-  delay_ms(50);
+  delay_ms(100);
 }
 
 void init(void) {
@@ -143,7 +143,7 @@ void main() {
         }
 
         // Bump cycle counter
-        if (buttontimer > 15) {
+        if (buttontimer > 10) {
           cycle++; buttontimer=0;
           blinkLED();
         }
