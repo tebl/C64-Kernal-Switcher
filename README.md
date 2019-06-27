@@ -80,7 +80,7 @@ Components in parenthesis are those used for extra features, you can omit these 
 
 | Reference    | Item                                  | Count |
 | ------------ | ------------------------------------- | ----- |
-| PCB          | Fabricate using Gerber files (![order](https://www.pcbway.com/project/shareproject/Commodore_64_Quad_Kernal_Switcher.html?inviteid=88707))          |     1 |
+| PCB          | Fabricate using Gerber files ([order](https://www.pcbway.com/project/shareproject/Commodore_64_Quad_Kernal_Switcher.html?inviteid=88707))          |     1 |
 | C1           | 100nF capacitor                       |     1 |
 | R1           | 1k ohm resistor                       |   (1) | 
 | R2           | 3k3 ohm resistor                      |   (1) |
