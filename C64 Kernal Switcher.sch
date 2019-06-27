@@ -760,4 +760,10 @@ F 3 "" H 6675 4275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6475 4275
+Text Notes 7475 7500 0    60   ~ 0
+Quad kernal switcher for "Longboard"
+Text Notes 7000 6775 0    60   ~ 0
+Based on "BWACK"s design, this tweaks the header pins for easier fit and reuse of the\noriginal system LED. Perfect for longboards installed in C64C cases, new and old!
+Text Notes 8150 7650 0    60   ~ 0
+27/06-2019
 $EndSCHEMATC
