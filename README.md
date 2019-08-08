@@ -35,6 +35,11 @@ With a lot going on for such a tiny board, you'd need to pay some attention to t
 ![Topside](https://github.com/tebl/C64-Kernal-Switcher/raw/master/gallery/Build%20%233.jpg)
 ![Underside](https://github.com/tebl/C64-Kernal-Switcher/raw/master/gallery/Build%20%234.jpg)
 
+### Alternative build
+The PCB doubles up as a 27c256 to 2364 adapter board, which means that you can also use it to replace the other ROM ICs used in the longboard versions of the motherboard. While there aren't many alternatives available for the basic and character ROM, but replacing them may lead to lower power use as well as decreased heat within the computer case - personally I use one as a handy way of having a 4-in-1 replacement when troubleshooting failed systems. The build process is the same as the one above, but there is no need to add resistors, 12-pin socket since the 12f629 won't be used and then add pin headers at the top in order select active ROM image. You can generate a suitable bin-file to flash 27c256 using the following command (substitute kernal4 with one of your own choice):
+
+`copy /b basic.901226-01.bin+kernal.901227-03.bin+characters.901225-01.bin+kernal4.bin 27C256_longboard_4in1.bin`
+
 ## Installation
 First of all, check that you have a C64 with a "longboard", these are physically larger - the later common C64C boards had combined basic and kernal ROMs on a single chip, requiring a different solution altogether! First locate the kernal ROM, it should be marked 901227-03 and preferably already socketed.
 
